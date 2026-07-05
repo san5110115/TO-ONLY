@@ -71,3 +71,40 @@
   <script src="script.js"></script>
 </body>
 </html>
+  </div>
+
+  <!-- 画廊界面（闯关完成后显示） -->
+  <header id="gallery-header" class="controls" style="display:none">
+    <div class="left">
+      <button id="play-pause" title="播放/暂停">播放</button>
+      <button id="mute-toggle" title="静音/取消静音">静音</button>
+      <label>列数：
+        <input id="cols" type="number" min="1" max="6" value="3" />
+      </label>
+      <button id="save-layout">保存布局 (下载)</button>
+      <button id="restore-layout">恢复上次布局</button>
+    </div>
+    <div class="right">
+      <small>🎂 完成挑战！现在可以欣赏你的相册了</small>
+    </div>
+  </header>
+
+  <!-- 音频可视化 -->
+  <canvas id="visual" width="800" height="120" style="display:none"></canvas>
+
+  <main id="gallery-container" style="display:none">
+    <section id="gallery" class="gallery" aria-label="图片画廊">
+      <!-- 图片会通过脚本动态插入 -->
+    </section>
+  </main>
+
+  <footer id="gallery-footer" class="footer" style="display:none">
+    <p>✨ 恭喜！你已解锁所有照片。可以拖动调整顺序、双击编辑标题。</p>
+  </footer>
+
+  <!-- 背景音乐 -->
+  <audio id="bg-audio" src="music.mp3" loop crossorigin="anonymous" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
