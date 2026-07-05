@@ -5,8 +5,14 @@ body{margin:0;background:#f6fbf2;color:#103014}
 .controls .left button{margin-right:8px}
 .gallery{display:grid;grid-template-columns:repeat(var(--cols),1fr);gap:12px;padding:16px;max-width:1100px;margin:18px auto}
 .gallery-item{background:#fff;border-radius:8px;padding:6px;box-shadow:0 2px 6px rgba(0,0,0,0.08);overflow:hidden}
-.gallery-item img{width:100%;height:200px;object-fit:cover;display:block;border-radius:6px}
+.gallery-item img{width:100%;height:200px;object-fit:cover;display:block;border-radius:6px;cursor:zoom-in}
 .gallery-item figcaption{padding:6px 4px;font-size:14px;outline:none}
+.image-zoom-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.8);display:flex;align-items:center;justify-content:center;padding:24px;z-index:1000;opacity:0;pointer-events:none;transition:opacity .2s ease}
+.image-zoom-overlay.active{opacity:1;pointer-events:auto}
+.image-zoom-panel{position:relative;max-width:min(92vw, 980px);max-height:92vh;display:flex;flex-direction:column;align-items:center;gap:12px;background:rgba(255,255,255,0.96);padding:16px;border-radius:16px;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.image-zoom-close{position:absolute;top:10px;right:10px;width:38px;height:38px;border:none;border-radius:50%;background:#4aa96c;color:#fff;font-size:20px;cursor:pointer}
+.image-zoom-image{max-width:100%;max-height:72vh;object-fit:contain;border-radius:10px;display:block}
+.image-zoom-caption{margin:0;font-size:15px;color:#2c4b30;text-align:center}
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,0.6);display:flex;align-items:center;justify-content:center;z-index:50}
 .start-box{background:#fff;padding:24px;border-radius:10px;max-width:420px;text-align:center}
 #visual{display:block;margin:0 auto;max-width:1100px;width:100%;background:#071214;border-radius:6px}
