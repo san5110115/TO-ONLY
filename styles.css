@@ -36,3 +36,5 @@ body{margin:0;background:#f6fbf2;color:#103014}
 .celebration{text-align:center;padding:18px;border-radius:12px;background:#fff6bf;color:#6c4b00}
 .rhythm-click-area{padding:24px;border-radius:16px;background:linear-gradient(135deg,#6bcf7b,#4aa96c);color:#fff;text-align:center;font-size:1.2rem;cursor:pointer}
 @media (max-width:700px){.gallery-item img{height:150px}.memory-board{grid-template-columns:repeat(3, minmax(0, 1fr))}.game-container{padding:14px}}
+.rhythm-click-area{padding:24px;border-radius:16px;background:linear-gradient(135deg,#6bcf7b,#4aa96c);color:#fff;text-align:center;font-size:1.2rem;cursor:pointer}
+@media (max-width:700px){.gallery-item img{height:150px}.memory-board{grid-template-columns:repeat(3, minmax(0, 1fr))}.game-container{padding:14px}}
