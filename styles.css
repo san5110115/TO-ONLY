@@ -11,4 +11,22 @@ body{margin:0;background:#f6fbf2;color:#103014}
 .start-box{background:#fff;padding:24px;border-radius:10px;max-width:420px;text-align:center}
 #visual{display:block;margin:0 auto;max-width:1100px;width:100%;background:#071214;border-radius:6px}
 .footer{padding:12px;text-align:center;color:#2c4b30}
-@media (max-width:700px){.gallery-item img{height:150px}}
+.game-container{max-width:1000px;margin:20px auto;padding:20px;background:#fff;border-radius:14px;box-shadow:0 10px 30px rgba(16,48,20,0.12)}
+.game-header{margin-bottom:16px}
+.game-header h2{margin:0 0 8px}
+.progress-bar{height:10px;background:#e7f4de;border-radius:999px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,#8ccf53,#4aa96c);transition:width .3s ease}
+.game-content{display:grid;gap:16px}
+.memory-board{display:grid;grid-template-columns:repeat(4, minmax(0, 1fr));gap:12px}
+.memory-card{aspect-ratio:1/1;border-radius:12px;background:linear-gradient(135deg,#7cc36b,#4ea34d);display:flex;align-items:center;justify-content:center;color:#fff;font-size:2rem;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.12)}
+.memory-card.flipped{background:#fff;color:#244022;border:2px solid #8ccf53}
+.typing-container,.quiz-container,.rhythm-container{background:#f8fdee;border:1px solid #dceecf;border-radius:12px;padding:16px}
+.typing-target{font-size:1.1rem;margin:0 0 12px;color:#2c4b30}
+.typing-input,.quiz-btn,.secondary-btn,button{font:inherit;padding:10px 14px;border:none;border-radius:999px;cursor:pointer}
+.typing-input{width:100%;max-width:320px;border:1px solid #c7e3b5;padding:10px 12px}
+.quiz-options{display:grid;gap:10px;margin-top:12px}
+.quiz-option-btn,.quiz-btn,.secondary-btn,button{background:#7cc36b;color:#fff}
+.quiz-option-btn.selected{outline:2px solid #2c4b30}
+.celebration{text-align:center;padding:18px;border-radius:12px;background:#fff6bf;color:#6c4b00}
+.rhythm-click-area{padding:24px;border-radius:16px;background:linear-gradient(135deg,#6bcf7b,#4aa96c);color:#fff;text-align:center;font-size:1.2rem;cursor:pointer}
+@media (max-width:700px){.gallery-item img{height:150px}.memory-board{grid-template-columns:repeat(3, minmax(0, 1fr))}.game-container{padding:14px}}
