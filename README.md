@@ -90,7 +90,7 @@
         <figcaption contenteditable="true">小手办 & 小猫</figcaption>
       </figure>
       <figure class="gallery-item" draggable="true" data-id="13">
-        <img src="5.JPG alt="图片 13" />
+        <img src="5.JPG" alt="图片 13" />
         <figcaption contenteditable="true">📸 偷拍</figcaption>
       </figure>
       <figure class="gallery-item" draggable="true" data-id="14">
